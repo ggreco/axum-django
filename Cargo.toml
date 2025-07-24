@@ -1,0 +1,12 @@
+[package]
+name = "rust-zola"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+axum = "^0.8"
+tokio = { version = "^1.46", features = ["macros", "rt-multi-thread", "signal", "process"] }
+reqwest = { version = "^0.12", default-features = false, features = ["rustls-tls", "json"] }
+sqlx = { version = "^0.8", features = ["sqlite", "runtime-tokio", "uuid", "migrate", "chrono"] }
+serde = { version = "1.0.219", features = ["derive"] }
+serde_json = "1.0.141"
