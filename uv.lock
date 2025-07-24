@@ -91,7 +91,7 @@ wheels = [
 ]
 
 [[package]]
-name = "rust-zola"
+name = "rust-django"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [

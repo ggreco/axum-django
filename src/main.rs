@@ -1,5 +1,5 @@
 use axum::{routing::{any, get}, Router};
-use rust_zola::endpoints::{fallback_handler, rust_handler, users_handler};
+use rust_django::endpoints::{fallback_handler, rust_handler, users_handler};
 use std::process::Stdio;
 use tokio::process::Command;
 use tokio::time::{sleep, Duration};
