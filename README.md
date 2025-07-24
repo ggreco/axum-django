@@ -24,7 +24,7 @@ This project demonstrates a hybrid approach for gradually migrating from Django 
 2. Access the services:
    - Rust endpoint: http://127.0.0.1:3000/rust
    - Django ninja endpoint: http://127.0.0.1:3000/api/hello
-   - Django admin: http://127.0.0.1:3000/admin/ (you may need to create a user before)
+   - Django admin: http://127.0.0.1:3000/admin/ (you may need to create a user before) **this is served through axum***
    - All other routes are forwarded from Rust to Django
 
 ## Migration Strategy
