@@ -6,7 +6,7 @@ use reqwest::StatusCode;
 static HTTP_CLIENT: OnceLock<reqwest::Client> = OnceLock::new();
 
 pub async fn rust_handler() -> &'static str {
-    "Hello, World!"
+    "Hello, World from Axum/Rust!"
 }
 
 pub fn get_http_client() -> &'static reqwest::Client {

@@ -22,8 +22,9 @@ This project demonstrates a hybrid approach for gradually migrating from Django 
    This will automatically start both the Django server (port 8000) and the Rust server (port 3000).
 
 2. Access the services:
-   - Rust service: http://127.0.0.1:3000/rust
-   - Django admin: http://127.0.0.1:8000/admin/ (username: admin, password: admin123)
+   - Rust endpoint: http://127.0.0.1:3000/rust
+   - Django ninja endpoint: http://127.0.0.1:3000/api/hello
+   - Django admin: http://127.0.0.1:3000/admin/ (you may need to create a user before)
    - All other routes are forwarded from Rust to Django
 
 ## Migration Strategy
