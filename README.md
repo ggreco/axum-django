@@ -21,15 +21,15 @@ This project demonstrates a hybrid approach for gradually migrating from Django 
    ```
    This will automatically start both the Django server (port 8000) and the Rust server (port 3000).
 
-2. Access the services:
+2. Some interesting routes:
    - Rust endpoint: http://127.0.0.1:3000/rust
    - Django ninja endpoint: http://127.0.0.1:3000/api/hello
-   - Django admin: http://127.0.0.1:3000/admin/ (you may need to create a user before) **this is served through axum***
-   - All other routes are forwarded from Rust to Django
+   - Django admin: http://127.0.0.1:3000/admin/ (you may need to create a user before) **served through axum**
+   - All other routes are forwarded from Axum to Django
 
 ## Migration Strategy
 
-Routes can be migrated from Django to Rust incrementally by:
+Routes can be migrated from Django to Axum incrementally by:
 1. Implementing the route handler in Rust (`src/endpoints.rs`)
 2. Adding the route to the Axum router (`src/main.rs`)
 3. Removing or deprecating the corresponding Django ninja API
